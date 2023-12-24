@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>function</title>
+</head>
+
+<body>
+    <h1 style="font-family: cursive;">FUNCTION IN JAVASCRIPT</h1>
+    <p id="show"></p>
+    <script>
+        // example 1
+        // function show() {
+        //     document.getElementById('show').innerHTML = 'peter';
+        // }
+        // show();
+
+        // // example 2
+        // function add(a, b) {   // a and b are parameters
+        //     document.getElementById('show').innerHTML = a + b;
+        // }
+        // add(3, 4);  // 3 and 4 are arguments
+
+        // // example 3
+        // arrow function or anonymous function
+
+        // const display=()=>{
+        //     document.getElementById('show').innerHTML = 'arrow function';
+
+        // }
+        // display ();
+
+        //example 4
+        // const display=(name,age)=>{
+        //     // document.getElementById('show').innerHTML = 'the name is  '+name+  ' , the age is ' +age;
+        //     document.getElementById('show').innerHTML = `the name is ${name} and the age is ${age}`;
+
+
+        // }
+        // display ('peter',99);
+
+        // example 5
+        // function coffeename(name , size){
+        //     return name + size;
+        //     // return `the name of the coffee is ${name} and the size is ${size}`;
+
+        // }
+        // document.getElementById('show') .innerHTML= coffeename('latte' , 'medium');
+
+        //example 6
+
+
+        //example 7
+        // immidiately invoked function
+        // // 1
+        // (function show(){
+        //     console.log('show function');
+        // })()
+
+        //  //2
+        // const a=((a)=>{
+        //     console.log('hello');
+        // })(99);
+
+        //example 8
+        //    const display=(empid,name)=>{
+        //     console.log(empid,name);
+        //    }
+        //    display(121,'thor');
+
+        // example 9
+        // const outer = () => {
+        //     console.log('outer function');
+        //     const inner = () => {
+        //         console.log('inner function');
+        //     }
+        //     inner();
+        // }
+        // outer();
+
+        //example 10
+        // const outer = () => {
+        //     console.log('outer function');
+        //     const inner = () => {
+        //         console.log('inner function');
+        //     }
+        //     return inner;
+        // }
+        // outer()();
+
+        //example 11
+
+        //example 12
+        // let s=99;
+        // function show (s){
+        //     console.log('shobhit');
+        //     return s;
+        // }
+        // console.log(show(s));
+        // //show(9);
+
+        //example 13
+        // diff bet normal function and arrow function
+
+        // function real(){
+        //     console.log('real function');
+        // }
+        // const notreal=()=>{
+        //     console.log('not real');
+        // }
+        // console.log(real);
+        // console.log(notreal);
+
+        // //{check in console tab real function has mark with f}
+
+        //example 14
+        const a=()=>{
+            console.log('a');
+            return 9;
+        }
+        const z=a;  //here a functiion assign in z
+        console.log(z()); 
+        
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

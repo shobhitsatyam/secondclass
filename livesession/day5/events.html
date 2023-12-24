@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>event</title>
+</head>
+<body>
+    <h1> event in javascript</h1>
+     <!-- example of method 6 -->
+    <p id="para1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, corrupti officia, dicta magnam, provident explicabo est sit et ullam deleniti iste nisi nostrum soluta placeat libero modi odit beatae quos!</p>
+    <p id="para2" style="display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea molestias optio quos. Expedita iste vero repudiandae nihil illo maxime autem saepe inventore reprehenderit porro at odio impedit, praesentium, eaque nesciunt?</p>
+    <button id= 'readmore'>read more</button>
+
+     <!--  example of method 7 -->
+     <!-- <p id="para1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, corrupti officia, dicta magnam, provident explicabo est sit et ullam deleniti iste nisi nostrum soluta placeat libero modi odit beatae quos!</p> -->
+
+
+     <!-- touch events example metjod 9 -->
+     <!-- <div id="touchdiv" style="width: 200px;background-color: lightcoral;">touch here</div> -->
+
+<!-- example 10 submit event -->
+
+<!-- <form  id="myform">
+    <input type="text" name="username" id="username" placeholder="username" required>
+<input type="submit" value="submit">
+</form> -->
+
+<!-- <p id="eventsdemo"></p>
+  <div id="clickdemo">click here</div> -->
+    <!-- <button id="btn" onclick="showcontent()"> show content</button> -->
+    <!-- <button id="btnevent"> show content</button> --> 
+    <script>
+
+        // // method 1 --> on click event
+        // const eventsdemo=document.getElementById('eventsdemo');
+        // function showcontent(){
+        //     eventsdemo.innerHTML='paragraph content';
+            
+        // }
+                  //or
+
+
+        //  // const eventsdemo=document.getElementById('eventsdemo');
+        //  function showcontent(){
+        //     // eventsdemo.innerHTML='paragraph content';
+        //     document.getElementById('eventsdemo') .innerHTML='paragraph content';
+        // }
+
+        //method 2 --> 
+        // const eventsdemo=document.getElementById('eventsdemo');
+        // const btn=document.getElementById('btnevent');
+        // function showcontent(){
+        //     eventsdemo.innerHTML='paragraph content';
+        // }  
+        // btn.addEventListener('click',showcontent)
+
+        // // method-3
+        // const eventsdemo=document.getElementById('eventsdemo');
+        // const btn=document.getElementById('btnevent');
+        
+        // btn.addEventListener('click',function showcontent(){
+        //     eventsdemo.innerHTML='paragraph content';
+        // }  )
+
+        //   // method-4
+        //   const eventsdemo=document.getElementById('eventsdemo');
+        // const btn=document.getElementById('btnevent');
+        
+        // btn.addEventListener('click',()=>{
+        //     eventsdemo.innerHTML='paragraph content';
+        // }  )
+
+        //  // method-5
+        //  const eventsdemo=document.getElementById('eventsdemo');
+        // const clickdemo=document.getElementById('clickdemo');
+        
+        // clickdemo.addEventListener('click',()=>{
+        //     eventsdemo.innerHTML='paragraph content';
+        // }  )
+        
+
+        // method 6
+        //  const para2=document.getElementById('para2');
+        const readmore=document.getElementById('readmore');
+        
+        readmore.addEventListener('click',()=>{
+            // para2.style.display='block';
+            if(para2.style.display=='block'){
+                para2.style.display='none';
+            }else{
+                para2.style.display='block';
+            }
+        }  )
+
+        // //method 7 --> mouse over
+        // const para1=document.getElementById('para1');
+        // para1.addEventListener('mouseover', ()=>{
+        //     para1.style.backgroundColor='pink';
+        // })
+        // para1.addEventListener('mouseout', ()=>{
+        //     para1.style.backgroundColor='white';
+        // })
+
+//  //method 8 --> double click
+//  const para1=document.getElementById('para1');
+//         para1.addEventListener('dblclick', ()=>{
+//             para1.style.backgroundColor='pink';
+//         })
+
+    // // method 9 for touch screen
+    // const touchdiv=document.getElementById('touchdiv');
+    // touchdiv.addEventListener('touchstart', ()=>{
+    //     touchdiv.style.backgroundColor='pink';
+    //     })
+
+//     //method 10
+//    document.getElementById('myform') .addEventListener('submit', ()=>{
+//     alert('thankyou for submission')
+//    })
+       
+
+
+    </script>
+    
+</body>
+</html> 

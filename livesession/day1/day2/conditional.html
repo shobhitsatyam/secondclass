@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>conditional</title>
+</head>
+<body>
+    <h1> nested if </h1>
+    <p id="nestedifdemo"></p>
+    <!-- <form>
+        <label for ='enter first number '> enter number </label><br>
+        <input type="text" name="user name"> <br><br>
+        <label for ='enter second number '> enter number </label><br>
+        <input type="text" name="user name"> 
+    </form>
+
+    <button type="button" onclick="alert"> f</button> -->
+    <script>
+        
+        let a=899;
+        let b=85;
+        console.log(a,b);
+
+        if(a<=99 && b<=99){
+            document.getElementById('nestedifdemo') .innerHTML= '<h2> number is true </h2>';
+        }else if(a>99 && b<=99 ){
+            document.getElementById('nestedifdemo') .innerHTML= '<h2> A is wrong please correct it in 2 digit  </h2>';
+            
+        }else if(a<=99 && b>99){
+            document.getElementById('nestedifdemo') .innerHTML= '<h2>B is wrong please correct it in 2 digit  </h2>';
+        }
+        else if(a>99 && b>99){
+            document.getElementById('nestedifdemo') .innerHTML= '<h2> both the number is wrong please correct in 2 digit   </h2>';
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>quiz</title>
+
+    <style>
+        div {
+            text-align: center;
+        }
+
+        button {
+            margin: 20px;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1> what is the capital of france ?</h1>
+
+    <div class="answers">
+        <button id="btn" data-correct="true"> pairs </button>
+        <button id="btn"> rome </button>
+        <button id="btn">berlin </button>
+        <button id="btn"> london </button>
+    </div>
+
+    <h4 id="displayanswer" style="text-align: center;"> </h4>
+
+    </div>
+
+
+    <script>
+        const btn = document.getElementById('btn');
+        btn.addEventListener('click', () => {
+            if (!btn.getAttribute('data-correct')) {
+                btn.style.backgroundColor = 'green';
+                btn.style.color = 'white';
+                document.getElementById('displayanswer').innerHTML = 'answer is correct';
+
+            } else {
+                btn.style.backgroundColor = 'red';
+                btn.style.color = 'white';
+                document.getElementById('displayanswer').innerHTML = 'answer is wrong';
+
+
+            }
+
+            btn.disabled=true;
+        })
+
+
+        // const wrong = document.getElementById('wrong');
+        // wrong.addEventListener('click', () => {
+        //     wrong.style.backgroundColor = 'red';
+        //     wrong.style.color = 'white';
+        //     // alert('answer is wrong , the right anser is "paris"')
+
+        // })
+
+        // const berlin = document.getElementById('wrong');
+        // berlin.addEventListener('click', () => {
+        //     berlin.style.backgroundColor = 'red';
+        //     berlin.style.color = 'white';
+        //     // alert('answer is wrong , the right anser is "paris"')
+        //     document.getElementById('displayanswer').innerHTML = 'answer is wrong';
+        // })
+
+
+
+        // const london = document.getElementById('wrong');
+        // london.addEventListener('click', () => {
+        //     london.style.backgroundColor = 'red';
+        //     london.style.color = 'white';
+        //     // alert('answer is wrong , the right anser is "paris"')
+        //     document.getElementById('displayanswer').innerHTML = 'answer is wrong';
+        // })
+
+
+
+
+    </script>
+
+</body>
+
+</html>

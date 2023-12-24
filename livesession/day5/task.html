@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form  id="myform">
+        <input type="text" id="username" name="username" placeholder="name" required><br>
+        <input type="email" id="emailid" name="emailid" placeholder="@gmail.com" required><br>
+        <input type="number" id="mobilenumber" name="mobilenumber" placeholder="mobilenumber" required><br>
+        <!-- <input type="paasword" id="paasword" name="paasword" placeholder="enter your paasword" required><br> -->
+        <input type="password" id="paasword" name="paasword" placeholder="enter your paasword"><br>
+        press submit and see in consolebox.
+        <button id="btn">submit</button>
+    </form>
+    
+    
+
+    <script>
+        function formdata(){
+            var username = document.getElementById('username').value;
+            var emailid = document.getElementById('emailid').value;
+            var mobilenumber = document.getElementById('mobilenumber').value;
+            var paasword = document.getElementById('paasword').value;
+        console.log(username);
+        console.log(emailid);
+        console.log(mobilenumber);
+        console.log(paasword);
+ 
+ 
+        }
+       
+     
+    </script>
+</body>
+</html>

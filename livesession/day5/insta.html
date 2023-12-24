@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #fafafa;
+    }
+
+    .logo-container {
+      background-color: #405DE6;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100px;
+      height: 100px;
+      background-color: #fff;
+      border-radius: 50%;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .camera {
+      width: 60%;
+      height: 60%;
+      background-color: #fdcf58;
+      border-radius: 50%;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .camera::before {
+      content: "";
+      width: 80%;
+      height: 80%;
+      background-color: #fff;
+      border-radius: 50%;
+      position: absolute;
+    }
+
+    .flash {
+      width: 20%;
+      height: 20%;
+      background-color: #fff;
+      border-radius: 50%;
+      position: absolute;
+      bottom: 5%;
+      right: 5%;
+    }
+  </style>
+</head>
+<body>
+  <div class="logo-container">
+    <div class="logo">
+      <div class="camera">
+        <div class="flash"></div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
